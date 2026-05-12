@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026–2027 Professional Development Proposal | Visit Loudoun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --deep-merlot: #5C1F3A;
+    --deep-merlot-light: #7A2B4D;
+    --earthy-noir: #2B2521;
+    --bold-sage: #8A9A7B;
+    --bold-sage-light: #B5C2A5;
+    --cream: #F7F3EC;
+    --warm-white: #FBF9F5;
+    --soft-grey: #E8E2D8;
+    --text-grey: #555049;
+    --tier-1: #5C1F3A;
+    --tier-2: #8A9A7B;
+    --tier-3: #B88A4A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--warm-white);
+    color: var(--earthy-noir);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 2rem; }
+
+  header.hero {
+    background: linear-gradient(135deg, var(--deep-merlot) 0%, #43162B 100%);
+    color: var(--warm-white);
+    padding: 4rem 0 3rem;
+    border-bottom: 4px solid var(--bold-sage);
+  }
+  .hero-eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--bold-sage-light);
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  .hero h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.8rem;
+    line-height: 1.15;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    max-width: 820px;
+  }
+  .hero-sub {
+    font-size: 1.15rem;
+    max-width: 720px;
+    opacity: 0.92;
+    margin-bottom: 2rem;
+  }
+  .hero-meta {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  .hero-meta-item .label {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 0.25rem;
+  }
+  .hero-meta-item .value { font-size: 1.05rem; font-weight: 500; }
+
+  nav.tabs {
+    background: var(--warm-white);
+    border-bottom: 1px solid var(--soft-grey);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .tab-list {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+  .tab-btn {
+    flex-shrink: 0;
+    padding: 1.1rem 1.4rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-grey);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  .tab-btn:hover { color: var(--deep-merlot); background: var(--cream); }
+  .tab-btn.active {
+    color: var(--deep-merlot);
+    border-bottom-color: var(--deep-merlot);
+    font-weight: 600;
+  }
+
+  main { padding: 3rem 0 5rem; }
+  .tab-panel { display: none; animation: fadeIn 0.3s ease; }
+  .tab-panel.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+  .conf-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--soft-grey);
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .conf-title h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--deep-merlot);
+    margin-bottom: 0.75rem;
+  }
+  .conf-meta {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    color: var(--text-grey);
+    font-size: 0.95rem;
+  }
+  .conf-meta span::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: var(--bold-sage);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    margin-top: -2px;
+  }
+  .tier-badge {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    min-width: 140px;
+  }
+  .tier-badge.tier-1 { background: var(--tier-1); }
+  .tier-badge.tier-2 { background: var(--tier-2); }
+  .tier-badge.tier-3 { background: var(--tier-3); }
+  .tier-badge .tier-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-bottom: 0.2rem;
+  }
+  .tier-badge .tier-num {
+    font-family: 'Lora', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .tier-badge .tier-desc {
+    font-size: 0.75rem;
+    margin-top: 0.3rem;
+    opacity: 0.9;
+  }
+
+  .lead-para {
+    font-size: 1.15rem;
+    color: var(--earthy-noir);
+    max-width: 800px;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  @media (max-width: 800px) { .grid-2 { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--cream);
+    border-radius: 6px;
+    padding: 1.75rem;
+    border-left: 3px solid var(--bold-sage);
+  }
+  .card.merlot { border-left-color: var(--deep-merlot); }
+  .card h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+    color: var(--deep-merlot);
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  .card p { margin-bottom: 0.75rem; }
+  .card p:last-child { margin-bottom: 0; }
+  .card ul { list-style: none; padding-left: 0; }
+  .card ul li {
+    padding-left: 1.2rem;
+    position: relative;
+    margin-bottom: 0.6rem;
+  }
+  .card ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--bold-sage);
+    font-weight: 600;
+  }
+
+  .cost-table {
+    background: white;
+    border: 1px solid var(--soft-grey);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+  }
+  .cost-table h3 {
+    background: var(--earthy-noir);
+    color: var(--warm-white);
+    padding: 1rem 1.5rem;
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .cost-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.85rem 1.5rem;
+    border-bottom: 1px solid var(--soft-grey);
+    font-size: 0.95rem;
+  }
+  .cost-row:last-child { border-bottom: none; }
+  .cost-row.total {
+    background: var(--cream);
+    font-weight: 600;
+    color: var(--deep-merlot);
+    font-size: 1.05rem;
+  }
+  .cost-row .label { color: var(--text-grey); }
+  .cost-row .amount { font-variant-numeric: tabular-nums; font-weight: 500; }
+
+  section.detail-block {
+    margin-bottom: 2.5rem;
+  }
+  section.detail-block h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    color: var(--deep-merlot);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--soft-grey);
+  }
+  section.detail-block p { margin-bottom: 1rem; max-width: 850px; }
+
+  .session-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 2rem;
+    list-style: none;
+  }
+  .session-list li {
+    padding: 0.75rem 0 0.75rem 1.2rem;
+    border-bottom: 1px dotted var(--soft-grey);
+    position: relative;
+    font-size: 0.95rem;
+  }
+  .session-list li::before {
+    content: "";
+    width: 8px;
+    height: 1px;
+    background: var(--deep-merlot);
+    position: absolute;
+    left: 0;
+    top: 1.2rem;
+  }
+  @media (max-width: 700px) { .session-list { grid-template-columns: 1fr; } }
+
+  .speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  .speaker {
+    background: white;
+    border: 1px solid var(--soft-grey);
+    border-radius: 4px;
+    padding: 1rem 1.2rem;
+  }
+  .speaker .name { font-weight: 600; color: var(--earthy-noir); margin-bottom: 0.2rem; font-size: 0.95rem; }
+  .speaker .role { font-size: 0.85rem; color: var(--text-grey); }
+
+  .alignment-box {
+    background: linear-gradient(135deg, var(--bold-sage) 0%, #6B8061 100%);
+    color: white;
+    padding: 2rem 2.25rem;
+    border-radius: 6px;
+    margin-bottom: 2.5rem;
+  }
+  .alignment-box h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 600;
+  }
+  .alignment-box p { font-size: 1rem; opacity: 0.95; }
+
+  /* SUMMARY TAB STYLES */
+  .summary-hero {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    border-bottom: 1px solid var(--soft-grey);
+    margin-bottom: 3rem;
+  }
+  .summary-hero h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.4rem;
+    color: var(--deep-merlot);
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  .summary-hero .total-ask {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1.5rem 3rem;
+    background: var(--deep-merlot);
+    color: white;
+    border-radius: 6px;
+  }
+  .summary-hero .total-ask .label {
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-bottom: 0.4rem;
+  }
+  .summary-hero .total-ask .amount {
+    font-family: 'Lora', serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .summary-hero .total-ask .note {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-top: 0.5rem;
+  }
+
+  .priority-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 3rem;
+    background: white;
+    border: 1px solid var(--soft-grey);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .priority-table th {
+    background: var(--earthy-noir);
+    color: var(--warm-white);
+    text-align: left;
+    padding: 1rem 1.25rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .priority-table td {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--soft-grey);
+    font-size: 0.95rem;
+    vertical-align: top;
+  }
+  .priority-table tr:last-child td { border-bottom: none; }
+  .priority-table tr:hover { background: var(--cream); }
+  .priority-table .conf-name { font-weight: 600; color: var(--deep-merlot); }
+  .priority-table .conf-loc { font-size: 0.82rem; color: var(--text-grey); margin-top: 0.2rem; }
+  .priority-table .amount-cell { font-variant-numeric: tabular-nums; font-weight: 500; }
+  .tier-pill {
+    display: inline-block;
+    padding: 0.25rem 0.7rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+  }
+  .tier-pill.t1 { background: var(--tier-1); }
+  .tier-pill.t2 { background: var(--tier-2); }
+  .tier-pill.t3 { background: var(--tier-3); }
+
+  .skills-matrix {
+    background: var(--cream);
+    border-radius: 6px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+  .skills-matrix h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    color: var(--deep-merlot);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  @media (max-width: 800px) { .skills-grid { grid-template-columns: 1fr; } }
+  .skill-row {
+    background: white;
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+    border-left: 3px solid var(--bold-sage);
+  }
+  .skill-row .skill-name { font-weight: 600; color: var(--earthy-noir); margin-bottom: 0.4rem; }
+  .skill-row .skill-confs { font-size: 0.85rem; color: var(--text-grey); }
+
+  .strategic-tie {
+    background: var(--earthy-noir);
+    color: var(--warm-white);
+    padding: 2.5rem 2.25rem;
+    border-radius: 6px;
+    margin-bottom: 3rem;
+  }
+  .strategic-tie h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: var(--bold-sage-light);
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  .strategic-tie p { opacity: 0.95; max-width: 900px; margin-bottom: 1rem; }
+  .strategic-tie ul { list-style: none; max-width: 900px; }
+  .strategic-tie ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.6rem;
+    opacity: 0.95;
+  }
+  .strategic-tie ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--bold-sage-light);
+  }
+
+  .calendar-strip {
+    margin-bottom: 3rem;
+  }
+  .calendar-strip h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    color: var(--deep-merlot);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid var(--bold-sage);
+  }
+  .timeline-item {
+    position: relative;
+    padding-bottom: 1.5rem;
+  }
+  .timeline-item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--deep-merlot);
+    border-radius: 50%;
+    position: absolute;
+    left: -2.6rem;
+    top: 0.3rem;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px var(--deep-merlot);
+  }
+  .timeline-date {
+    font-size: 0.85rem;
+    color: var(--text-grey);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.2rem;
+  }
+  .timeline-event {
+    font-weight: 600;
+    color: var(--earthy-noir);
+    font-size: 1rem;
+  }
+  .timeline-loc {
+    font-size: 0.85rem;
+    color: var(--text-grey);
+  }
+
+  footer {
+    background: var(--earthy-noir);
+    color: var(--warm-white);
+    padding: 2.5rem 0;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  footer p { opacity: 0.7; font-size: 0.85rem; margin-bottom: 0.3rem; }
+
+  .pull-quote {
+    border-left: 3px solid var(--deep-merlot);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--text-grey);
+    margin: 1.5rem 0 2rem;
+    max-width: 750px;
+  }
+
+  @media print {
+    nav.tabs { display: none; }
+    .tab-panel { display: block !important; page-break-after: always; }
+    header.hero { padding: 2rem 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">Professional Development Investment Proposal</div>
+    <h1>Seven Conferences to Sharpen Visit Loudoun's Marketing Edge</h1>
+    <p class="hero-sub">A strategic case for sending Visit Loudoun's Marketing Coordinator to seven targeted industry events across the 2026–2027 cycle — each chosen to directly advance the Elevate Loudoun 2026–2028 plan and strengthen the digital, SEO, and content infrastructure that drives overnight visitation.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="label">Prepared By</span>
+        <span class="value">AJ Mirabal, Marketing Coordinator</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">Reports To</span>
+        <span class="value">Director of Marketing &amp; Director of Communications</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">Strategic Plan</span>
+        <span class="value">Elevate Loudoun 2026–2028</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">Date</span>
+        <span class="value">May 2026</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="container">
+    <div class="tab-list" role="tablist">
+      <button class="tab-btn active" data-tab="summary">Executive Summary</button>
+      <button class="tab-btn" data-tab="esto">ESTO</button>
+      <button class="tab-btn" data-tab="di">DI Marketing &amp; Comms</button>
+      <button class="tab-btn" data-tab="brighton">brightonSEO</button>
+      <button class="tab-btn" data-tab="skift">Skift Data + AI</button>
+      <button class="tab-btn" data-tab="phocus">Phocuswright</button>
+      <button class="tab-btn" data-tab="digital">Digital Travel Summit</button>
+      <button class="tab-btn" data-tab="simpleview">Simpleview Summit</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+
+  <!-- ========== SUMMARY TAB ========== -->
+  <div class="tab-panel active" id="summary">
+    <div class="summary-hero">
+      <h2>The Investment at a Glance</h2>
+      <p style="max-width: 720px; margin: 0 auto; font-size: 1.1rem; color: var(--text-grey);">A coordinated, full-cycle professional development plan covering destination marketing, search/AI strategy, content authority, and travel technology — built to compound across the Elevate Loudoun strategic window.</p>
+      <div class="total-ask">
+        <div class="label">Total Estimated Investment</div>
+        <div class="amount">~$23,000–$25,000</div>
+        <div class="note">All-in: registration, travel, lodging, meals across all 7 events</div>
+      </div>
+    </div>
+
+    <div class="strategic-tie">
+      <h3>Why This Matters Now</h3>
+      <p>The destination marketing landscape is in the middle of its sharpest disruption in a decade. Google AI Overviews are reshaping organic discovery — DMOs nationally are reporting 20–40 percent traffic shifts as AI summaries replace traditional search results. Stakeholders are demanding economic-impact proof, not impressions. Day-tripper-to-overnight conversion is the new battleground, and the tools, tactics, and content standards needed to compete are evolving faster than published playbooks can keep up.</p>
+      <p>Every conference in this proposal addresses one of three strategic gaps:</p>
+      <ul>
+        <li>How to structure VisitLoudoun.org content so AI search engines cite Loudoun as an authoritative destination — not skip past it</li>
+        <li>How to measure and prove marketing's contribution to overnight visitation and lodging revenue</li>
+        <li>How peer DMOs are solving the same challenges, what's actually working, and what to avoid</li>
+      </ul>
+    </div>
+
+    <h3 style="font-family: 'Lora', serif; font-size: 1.5rem; color: var(--deep-merlot); margin-bottom: 1.25rem; font-weight: 600;">Priority Ranking &amp; Cost Summary</h3>
+    <table class="priority-table">
+      <thead>
+        <tr>
+          <th>Conference</th>
+          <th>Dates</th>
+          <th>Tier</th>
+          <th>Est. All-In</th>
+          <th>Core Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="conf-name">ESTO</div>
+            <div class="conf-loc">Philadelphia, PA</div>
+          </td>
+          <td>Aug 23–26, 2026</td>
+          <td><span class="tier-pill t1">Tier 1</span></td>
+          <td class="amount-cell">$3,000–$3,200</td>
+          <td>Flagship U.S. DMO conference. Direct peer benchmarking. Destiny Awards platform.</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="conf-name">DI Marketing &amp; Comms Summit</div>
+            <div class="conf-loc">Miami, FL</div>
+          </td>
+          <td>Feb 23–25, 2027</td>
+          <td><span class="tier-pill t1">Tier 1</span></td>
+          <td class="amount-cell">$3,100–$3,400</td>
+          <td>Only summit built specifically for DMO marketing &amp; comms staff. CrowdRiff CEO speaks.</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="conf-name">brightonSEO San Diego</div>
+            <div class="conf-loc">San Diego, CA</div>
+          </td>
+          <td>Sep 15–16, 2026</td>
+          <td><span class="tier-pill t1">Tier 1</span></td>
+          <td class="amount-cell">$4,200–$4,400</td>
+          <td>World's largest search marketing conference. Includes training day. GEO/AEO depth.</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="conf-name">Skift Data + AI Summit</div>
+            <div class="conf-loc">New York, NY</div>
+          </td>
+          <td>Jun 3, 2026</td>
+          <td><span class="tier-pill t2">Tier 2</span></td>
+          <td class="amount-cell">$2,000–$2,400</td>
+          <td>Lowest cost. One day in NYC. The AI-in-travel agenda for the year.</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="conf-name">Phocuswright Conference</div>
+            <div class="conf-loc">Hollywood, FL</div>
+          </td>
+          <td>Nov 17–19, 2026</td>
+          <td><span class="tier-pill t2">Tier 2</span></td>
+          <td class="amount-cell">$4,900–$5,100</td>
+          <td>Industry-defining travel-tech event. Exposure to OTAs, distribution leaders, AI strategy.</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="conf-name">Digital Travel Summit</div>
+            <div class="conf-loc">Orlando, FL</div>
+          </td>
+          <td>Sep 28–29, 2026</td>
+          <td><span class="tier-pill t2">Tier 2</span></td>
+          <td class="amount-cell">$2,500–$5,000</td>
+          <td>Practitioner-level digital marketing. 62% Manager/Director attendance — true peer event.</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="conf-name">Simpleview Summit</div>
+            <div class="conf-loc">TBD 2027</div>
+          </td>
+          <td>2027 (TBD)</td>
+          <td><span class="tier-pill t1">Tier 1</span></td>
+          <td class="amount-cell">~$2,500</td>
+          <td>Direct training on Visit Loudoun's CMS. Vendor relationships. Already proven ROI.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="skills-matrix">
+      <h3>Skill &amp; Capability Coverage</h3>
+      <p style="margin-bottom: 1.5rem; color: var(--text-grey);">No single conference covers all the ground Visit Loudoun needs. Together, these seven map cleanly to the full skill stack required for modern destination marketing:</p>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <div class="skill-name">AI Search &amp; GEO/AEO Strategy</div>
+          <div class="skill-confs">brightonSEO · Skift Data + AI · DI Marketing &amp; Comms</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">DMO Peer Benchmarking</div>
+          <div class="skill-confs">ESTO · DI Marketing &amp; Comms · Simpleview Summit</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">Technical SEO &amp; Content Authority</div>
+          <div class="skill-confs">brightonSEO · ESTO</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">Travel-Industry Trend Intelligence</div>
+          <div class="skill-confs">Phocuswright · Skift Data + AI · Digital Travel Summit</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">Economic Impact &amp; Attribution</div>
+          <div class="skill-confs">ESTO · DI Marketing &amp; Comms · Phocuswright</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">Overnight Visitor Conversion</div>
+          <div class="skill-confs">Phocuswright · Digital Travel Summit · ESTO</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">Simpleview CMS &amp; Vendor Stack</div>
+          <div class="skill-confs">Simpleview Summit · DI Marketing &amp; Comms</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">Content Creation in an AI Era</div>
+          <div class="skill-confs">brightonSEO · Skift Data + AI · DI Marketing &amp; Comms</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="calendar-strip">
+      <h3>2026–2027 Conference Calendar</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">June 3, 2026</div>
+          <div class="timeline-event">Skift Data + AI Summit</div>
+          <div class="timeline-loc">New York City — single day</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">August 23–26, 2026</div>
+          <div class="timeline-event">ESTO</div>
+          <div class="timeline-loc">Philadelphia, PA</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">September 15–16, 2026</div>
+          <div class="timeline-event">brightonSEO San Diego</div>
+          <div class="timeline-loc">San Diego, CA (+ optional training day Sep 14)</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">September 28–29, 2026</div>
+          <div class="timeline-event">Digital Travel Summit</div>
+          <div class="timeline-loc">Orlando, FL</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">November 17–19, 2026</div>
+          <div class="timeline-event">Phocuswright Conference</div>
+          <div class="timeline-loc">Hollywood, FL</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">February 23–25, 2027</div>
+          <div class="timeline-event">DI Marketing &amp; Communications Summit</div>
+          <div class="timeline-loc">Miami, FL</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2027 (TBD)</div>
+          <div class="timeline-event">Simpleview Summit</div>
+          <div class="timeline-loc">Location pending announcement</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alignment-box">
+      <h3>The Return for Visit Loudoun</h3>
+      <p style="margin-bottom: 1rem;">Every dollar invested here returns in three concrete ways: <strong>directly executable skills</strong> applied to VisitLoudoun.org content, ad copy, and analytics within weeks of return; <strong>industry intelligence</strong> that prevents costly missteps on AI search, vendor selection, and campaign strategy; and <strong>relationships</strong> with peer DMO marketers, Simpleview, CrowdRiff, and key vendors that shape the technology stack Visit Loudoun relies on every day.</p>
+      <p>The conferences are sequenced across the calendar so learning compounds — early-summer AI intelligence at Skift informs late-summer DMO peer conversations at ESTO; brightonSEO techniques are tested live before being benchmarked against peer work at DI Miami; Phocuswright's distribution insights feed directly into the 2027 campaign cycle.</p>
+    </div>
+
+  </div>
+
+  <!-- ========== ESTO TAB ========== -->
+  <div class="tab-panel" id="esto">
+    <div class="conf-header">
+      <div class="conf-title">
+        <h2>ESTO — Educational Seminar for Tourism Organizations</h2>
+        <div class="conf-meta">
+          <span>August 23–26, 2026</span>
+          <span>Philadelphia, PA</span>
+          <span>U.S. Travel Association</span>
+        </div>
+      </div>
+      <div class="tier-badge tier-1">
+        <span class="tier-label">Priority</span>
+        <span class="tier-num">Tier 1</span>
+        <span class="tier-desc">Top Recommendation</span>
+      </div>
+    </div>
+
+    <p class="lead-para">ESTO is the flagship industry conference for U.S. destination marketing organizations. It is open <em>exclusively</em> to destination professionals — DMO, CVB, and state tourism office staff — with no outside industry sectors permitted to attend. Every session, every roundtable, every networking conversation is with someone doing the same kind of work I do. The agenda maps directly to my job description, and Philadelphia is reachable by Amtrak for under $200 roundtrip.</p>
+
+    <div class="cost-table">
+      <h3>Cost Breakdown</h3>
+      <div class="cost-row"><span class="label">Registration (U.S. Travel member, early bird)</span><span class="amount">$1,250</span></div>
+      <div class="cost-row"><span class="label">Amtrak Northeast Regional DC ↔ Philadelphia 30th St</span><span class="amount">~$150</span></div>
+      <div class="cost-row"><span class="label">Hotel — 4 nights Center City Philadelphia</span><span class="amount">~$1,150</span></div>
+      <div class="cost-row"><span class="label">Meals &amp; incidentals (per diem 4 days)</span><span class="amount">~$400</span></div>
+      <div class="cost-row"><span class="label">Local ground transport</span><span class="amount">~$100</span></div>
+      <div class="cost-row total"><span class="label">Total estimated all-in</span><span class="amount">~$3,050</span></div>
+    </div>
+
+    <section class="detail-block">
+      <h3>Format That Sets ESTO Apart</h3>
+      <p>The 2025 edition in Phoenix introduced the <strong>AI Playground</strong> — a hands-on, interactive activation space where destination marketers explored practical AI applications for visitor engagement, campaign automation, and content strategy. Peer roundtables are capped at <strong>60 participants</strong> to keep conversations focused. This is structurally different from passive keynote-driven conferences — attendees come back with techniques they have practiced, not just notes from sessions they watched.</p>
+    </section>
+
+    <section class="detail-block">
+      <h3>2026 Content Tracks</h3>
+      <p>The ESTO 2026 program is organized into ten content tracks. The bolded tracks below are directly relevant to my day-to-day work at Visit Loudoun:</p>
+      <ul class="session-list">
+        <li><strong>Marketing</strong></li>
+        <li><strong>PR / Communications</strong></li>
+        <li><strong>Digital Race / Technology</strong></li>
+        <li><strong>Data &amp; Insights</strong></li>
+        <li><strong>Brand Differentiation</strong></li>
+        <li><strong>Destination Evolution</strong></li>
+        <li><strong>Impactful Insights</strong></li>
+        <li>Destination Management</li>
+        <li>Accelerating Growth</li>
+        <li>Leading Forward</li>
+      </ul>
+    </section>
+
+    <div class="grid-2">
+      <div class="card merlot">
+        <h3>What I'll Bring Back</h3>
+        <ul>
+          <li>A vetted, peer-tested view of how mid-Atlantic and regional DMOs are responding to AI search disruption</li>
+          <li>Direct intelligence on what's working for overnight visitor conversion campaigns at comparable destinations</li>
+          <li>New session frameworks for measuring economic impact and translating analytics into stakeholder reporting</li>
+          <li>Concrete examples of community-driven destination storytelling that map to Loudoun's Variety, Community, and Music &amp; Arts pillars</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Strategic Networking</h3>
+        <ul>
+          <li>Virginia Tourism Corporation convenes its state delegation at ESTO — direct face time with VTC leadership and Virginia peer DMOs</li>
+          <li>Peer benchmarking against Visit Norfolk, Visit Richmond, Visit Fredericksburg and other competitive set DMOs</li>
+          <li>Sponsor lounges include Simpleview, Sojern, Zartico, Bandwango — the core vendors in Visit Loudoun's evaluation orbit</li>
+          <li>NCSTD Boot Camp and Beyond-the-Classroom immersive experiences</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alignment-box">
+      <h3>The Destiny Awards Opportunity</h3>
+      <p>ESTO hosts the U.S. Travel Association's Destiny Awards, which recognize destination marketing excellence across digital campaigns, print marketing, PR, community impact, and innovation. The 2026 ceremony is August 25. Attending positions Visit Loudoun to submit work from the current campaign cycle for recognition in 2027 — a direct PR asset for the organization. This trip is both learning and award-cycle entry.</p>
+    </div>
+
+    <section class="detail-block">
+      <h3>Why This is the #1 Pitch</h3>
+      <p>If Visit Loudoun could fund only one conference for me in 2026, ESTO would be that conference. The cost is the lowest on this list by a meaningful margin thanks to train access. The fit is the highest. The networking is structurally aligned to Visit Loudoun's peer set and Virginia ecosystem. And it is the one event where what I learn on Monday gets used on the VisitLoudoun.org site by Friday.</p>
+    </section>
+  </div>
+
+  <!-- ========== DI MARKETING & COMMS TAB ========== -->
+  <div class="tab-panel" id="di">
+    <div class="conf-header">
+      <div class="conf-title">
+        <h2>Destinations International Marketing &amp; Communications Summit</h2>
+        <div class="conf-meta">
+          <span>February 23–25, 2027</span>
+          <span>Miami, FL</span>
+          <span>Destinations International</span>
+        </div>
+      </div>
+      <div class="tier-badge tier-1">
+        <span class="tier-label">Priority</span>
+        <span class="tier-num">Tier 1</span>
+        <span class="tier-desc">Top Recommendation</span>
+      </div>
+    </div>
+
+    <p class="lead-para">This is the only conference in the United States built specifically for marketing and communications staff at destination organizations. Every session is calibrated for the work I actually do. Held annually in February by Destinations International — the global trade body for DMOs — the 2027 edition convenes in Miami.</p>
+
+    <div class="cost-table">
+      <h3>Cost Breakdown</h3>
+      <div class="cost-row"><span class="label">Registration (DI member, early bird estimate)</span><span class="amount">~$1,100</span></div>
+      <div class="cost-row"><span class="label">Flight IAD ↔ MIA roundtrip</span><span class="amount">~$300</span></div>
+      <div class="cost-row"><span class="label">Hotel — 3 nights Miami (peak season)</span><span class="amount">~$1,020</span></div>
+      <div class="cost-row"><span class="label">Meals &amp; incidentals</span><span class="amount">~$350</span></div>
+      <div class="cost-row"><span class="label">Local ground transport</span><span class="amount">~$120</span></div>
+      <div class="cost-row total"><span class="label">Total estimated all-in</span><span class="amount">~$2,890–$3,400</span></div>
+    </div>
+
+    <section class="detail-block">
+      <h3>2026 Sessions (as proxy for 2027 program)</h3>
+      <p>The February 2026 edition (Cleveland) ran sessions directly aligned to my role. The 2027 Miami program will follow the same structural model:</p>
+      <ul class="session-list">
+        <li>How DMOs Are Modernizing Content Workflows for 2026 — featuring Dan Holowack, CEO of CrowdRiff</li>
+        <li>Why Most Marketing Metrics Miss Real Influence — beyond clicks, impressions, and bookings</li>
+        <li>Destination Reputation Study unveiling (annual signature research)</li>
+        <li>AI's impact on destination marketing and attribution</li>
+        <li>Crisis communication and PR measurement</li>
+        <li>Destination storytelling and brand strategy</li>
+        <li>Experiential marketing and creator-led growth</li>
+        <li>Social responsibility and stewardship-driven marketing</li>
+      </ul>
+    </section>
+
+    <section class="detail-block">
+      <h3>Notable Speakers (2026 Edition)</h3>
+      <div class="speaker-grid">
+        <div class="speaker">
+          <div class="name">Dan Holowack</div>
+          <div class="role">CEO, CrowdRiff</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Storm Tussey</div>
+          <div class="role">CMO, Discover Puerto Rico</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Todd Brook</div>
+          <div class="role">CEO, UNCHAINED AI</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Ashley Pettay</div>
+          <div class="role">Content Manager, Destination Madison</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid-2">
+      <div class="card merlot">
+        <h3>What I'll Bring Back</h3>
+        <ul>
+          <li>Direct workflow training on how peer DMOs are integrating CrowdRiff into content production at scale</li>
+          <li>The annual Destination Reputation Study — citable industry research for internal strategy memos and stakeholder reports</li>
+          <li>Frameworks for measuring marketing influence beyond standard digital metrics, suitable for board-level reporting</li>
+          <li>Peer relationships with marketing managers and coordinators at comparable DMOs nationally</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Vendor &amp; Industry Access</h3>
+        <ul>
+          <li>CrowdRiff leadership is consistently on the DI Summit stage — direct vendor relationship building</li>
+          <li>Simpleview, Zartico, Sojern all present and exhibit</li>
+          <li>Co-located CDME (Certified Destination Management Executive) coursework offers career development credentialing</li>
+          <li>DI Foundation scholarship eligibility for DMOs with budgets under $3M — worth verifying</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alignment-box">
+      <h3>Strategic Alignment</h3>
+      <p>If ESTO is the practitioner conference, this is the architect conference. ESTO teaches techniques; the DI Summit teaches strategy and frameworks. Together they are the two foundational DMO industry events for someone in my role. The CrowdRiff content workflow session alone has standalone ROI for how Visit Loudoun produces visual content for VisitLoudoun.org and social.</p>
+    </div>
+
+    <section class="detail-block">
+      <h3>Scholarship Opportunity to Verify</h3>
+      <p>Destinations International offers registration scholarships for employees of destination organizations with operating budgets at or below $3 million. Visit Loudoun's eligibility should be confirmed with DI prior to budget commitment — if eligible, registration costs could be substantially reduced or covered entirely, dropping the all-in cost of this trip below $2,000.</p>
+    </section>
+  </div>
+
+  <!-- ========== BRIGHTON SEO TAB ========== -->
+  <div class="tab-panel" id="brighton">
+    <div class="conf-header">
+      <div class="conf-title">
+        <h2>brightonSEO San Diego</h2>
+        <div class="conf-meta">
+          <span>September 15–16, 2026</span>
+          <span>San Diego Convention Center</span>
+          <span>+ Optional Training Day Sep 14</span>
+        </div>
+      </div>
+      <div class="tier-badge tier-1">
+        <span class="tier-label">Priority</span>
+        <span class="tier-num">Tier 1</span>
+        <span class="tier-desc">High-ROI Skill Investment</span>
+      </div>
+    </div>
+
+    <p class="lead-para">brightonSEO is the world's largest search marketing conference. While not tourism-specific, its content maps to my role at Visit Loudoun more tightly than almost any other SEO event — content writing, metadata strategy, GA4/GSC analytics, and now Generative Engine Optimization (GEO) for AI Overviews are exactly what I do every day on VisitLoudoun.org. The conference is famously practitioner-led — sessions are delivered by working SEOs, not vendors pitching products. Attending would also sharpen my ability to evaluate and push back on the SEO recommendations our agency partner delivers through our BrightEdge work, and give me the vocabulary and evidence base to brief leadership on the AI search transition in concrete terms.</p>
+
+    <div class="cost-table">
+      <h3>Cost Breakdown — Training + Conference Track</h3>
+      <div class="cost-row"><span class="label">Registration (Training + 2-day conference, standard)</span><span class="amount">$2,460</span></div>
+      <div class="cost-row"><span class="label">Flight IAD ↔ SAN roundtrip (nonstop September)</span><span class="amount">~$475</span></div>
+      <div class="cost-row"><span class="label">Hotel — 3 nights downtown San Diego</span><span class="amount">~$840</span></div>
+      <div class="cost-row"><span class="label">Meals &amp; incidentals</span><span class="amount">~$400</span></div>
+      <div class="cost-row"><span class="label">Local ground transport</span><span class="amount">~$120</span></div>
+      <div class="cost-row total"><span class="label">Total estimated all-in</span><span class="amount">~$4,295</span></div>
+    </div>
+
+    <p style="margin-bottom: 2rem; font-size: 0.92rem; color: var(--text-grey); font-style: italic;">A conference-only "Friend" ticket alternative without the training day reduces total cost to approximately $2,900. A free ballot ticket lottery and a separate scholarship program are also worth applying to in parallel — both would cover registration entirely and dropped fast in 2025.</p>
+
+    <section class="detail-block">
+      <h3>What brightonSEO Covers</h3>
+      <p>The full 2026 session schedule is announced approximately two months before the event. Based on brightonSEO's track record and the current state of the industry, expected focus areas include:</p>
+      <ul class="session-list">
+        <li>Generative Engine Optimization (GEO) / Answer Engine Optimization (AEO)</li>
+        <li>AI Overview citation strategy and content structuring</li>
+        <li>Technical SEO — schema, structured data, crawlability</li>
+        <li>E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)</li>
+        <li>Content strategy in an AI-saturated environment</li>
+        <li>Local SEO and entity optimization</li>
+        <li>Advanced GA4 and Google Search Console interpretation</li>
+        <li>Link building, content authority, and PR-driven SEO</li>
+      </ul>
+    </section>
+
+    <div class="grid-2">
+      <div class="card merlot">
+        <h3>Direct Application to VisitLoudoun.org</h3>
+        <ul>
+          <li>The town pages, landing pages, and feature pages I am building benefit immediately from new GEO/AEO techniques — measurable in GSC within 60–90 days of return</li>
+          <li>FAQ schema implementation across all town pages, structured for AI Overview citation</li>
+          <li>Refined metadata patterns for the blog SEO workflow I manage</li>
+          <li>Improved analytics frameworks that strengthen the case for content investment in stakeholder reports</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Why It Works for Visit Loudoun</h3>
+        <ul>
+          <li>Quantifiable ROI: GSC impressions and CTR lift on rewritten pages become a measurable proof point</li>
+          <li>Training day means I come home with techniques I can apply Monday morning, not just ideas to consider</li>
+          <li>brightonSEO's culture is famously "no fluff" — short, tactical, specific presentations</li>
+          <li>The DMO industry is behind on AI search adaptation; attending a non-tourism conference where this work is most advanced is a competitive advantage</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alignment-box">
+      <h3>The Strategic Case</h3>
+      <p>AI Overviews now appear in roughly 30 percent of travel-related Google searches, and DMOs are reporting 20–40 percent traffic drops year-over-year as a result. Being ranked first no longer guarantees clicks — being cited inside the AI Overview is the new goal, and that requires content structured fundamentally differently from traditional SEO. brightonSEO is where the practitioners solving this problem are publishing their work first. The DMO industry will get to this conversation second.</p>
+    </div>
+  </div>
+
+  <!-- ========== SKIFT TAB ========== -->
+  <div class="tab-panel" id="skift">
+    <div class="conf-header">
+      <div class="conf-title">
+        <h2>Skift Data + AI Summit</h2>
+        <div class="conf-meta">
+          <span>June 3, 2026</span>
+          <span>City Winery at Pier 57, NYC</span>
+          <span>Single Day</span>
+        </div>
+      </div>
+      <div class="tier-badge tier-2">
+        <span class="tier-label">Priority</span>
+        <span class="tier-num">Tier 2</span>
+        <span class="tier-desc">Highest Value-per-Dollar</span>
+      </div>
+    </div>
+
+    <p class="lead-para">Skift's single-day AI summit is one of the most strategically valuable days in the travel calendar. Curated to roughly 370 senior attendees from across the industry — airlines, hotels, OTAs, DMOs, and travel tech — it sells out every year. The agenda is built around what actually works in AI deployment for travel companies, with sessions delivered by the people running those programs. It is the most cost-efficient event on this list.</p>
+
+    <div class="cost-table">
+      <h3>Cost Breakdown</h3>
+      <div class="cost-row"><span class="label">Registration (estimate — exact 2026 pricing not yet public)</span><span class="amount">~$1,295</span></div>
+      <div class="cost-row"><span class="label">Amtrak DC ↔ NYC Penn Station roundtrip</span><span class="amount">~$200</span></div>
+      <div class="cost-row"><span class="label">Hotel — 1 night Chelsea/Manhattan</span><span class="amount">~$450</span></div>
+      <div class="cost-row"><span class="label">Meals &amp; incidentals</span><span class="amount">~$150</span></div>
+      <div class="cost-row"><span class="label">Local transit</span><span class="amount">~$50</span></div>
+      <div class="cost-row total"><span class="label">Total estimated all-in</span><span class="amount">~$2,145</span></div>
+    </div>
+
+    <section class="detail-block">
+      <h3>Confirmed 2026 Speakers</h3>
+      <div class="speaker-grid">
+        <div class="speaker">
+          <div class="name">Shilpa Ranganathan</div>
+          <div class="role">Chief Product Officer, Expedia Group</div>
+        </div>
+        <div class="speaker">
+          <div class="name">David Thompson</div>
+          <div class="role">CIO/CTO, American Express Global Business Travel</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Wei Manfredi</div>
+          <div class="role">SVP AI &amp; Architecture, IHG Hotels &amp; Resorts</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Richard Valtr</div>
+          <div class="role">Founder, Mews</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Jie Zheng</div>
+          <div class="role">Technology Lead, TUI Group</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Gilad Berenstein</div>
+          <div class="role">Founder, Brook Bay Capital</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-block">
+      <h3>Session Topics</h3>
+      <ul class="session-list">
+        <li>AI's real impact on revenue, pricing, and personalization in travel</li>
+        <li>Why AI programs fail to scale — patterns of failure</li>
+        <li>AI running hotel operations: staffing, housekeeping, inventory at scale</li>
+        <li>Build vs. buy decisions and vendor selection frameworks</li>
+        <li>AI governance, ownership, and accountability</li>
+        <li>How LLMs are reshaping content discovery in travel</li>
+        <li>"Scaling AI Requires the Courage to Dismantle" — TUI Group case study</li>
+      </ul>
+    </section>
+
+    <div class="grid-2">
+      <div class="card merlot">
+        <h3>What I'll Bring Back</h3>
+        <ul>
+          <li>A vendor-evaluation framework for the AI tools Visit Loudoun will inevitably be pitched by Simpleview, CrowdRiff, and others over the next 18 months</li>
+          <li>Honest benchmarks on what AI initiatives actually work in travel — and which ones consistently fail</li>
+          <li>Direct insight into how OTAs and major travel brands are using AI in content and discovery — which informs how Visit Loudoun positions content to be picked up by those layers</li>
+          <li>Real-world content workflow techniques applicable to the blog, page expansion, and Canva ad production work I do</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Why It Fits</h3>
+        <ul>
+          <li>Lowest all-in cost on this list (under $2,200)</li>
+          <li>One day out of office — minimal disruption to ongoing work</li>
+          <li>Amtrak-accessible — no flights, no airport time</li>
+          <li>Curated, sells-out audience means high-density learning and networking</li>
+          <li>Sets the AI-in-travel narrative for the next 12 months</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alignment-box">
+      <h3>The Compounding Effect</h3>
+      <p>Attending this in early June primes me with travel-industry AI intelligence before the rest of the conference year. The frameworks I learn at Skift inform every conversation I have at ESTO in August, at brightonSEO in September, and at DI in February 2027. It is the cheapest conference on the list and the one that creates the most leverage for the others.</p>
+    </div>
+  </div>
+
+  <!-- ========== PHOCUSWRIGHT TAB ========== -->
+  <div class="tab-panel" id="phocus">
+    <div class="conf-header">
+      <div class="conf-title">
+        <h2>Phocuswright Conference</h2>
+        <div class="conf-meta">
+          <span>November 17–19, 2026</span>
+          <span>Diplomat Beach Resort, Hollywood, FL</span>
+          <span>Theme: Pressures. Power. Pivots.</span>
+        </div>
+      </div>
+      <div class="tier-badge tier-2">
+        <span class="tier-label">Priority</span>
+        <span class="tier-num">Tier 2</span>
+        <span class="tier-desc">Strategic Industry Intelligence</span>
+      </div>
+    </div>
+
+    <p class="lead-para">Phocuswright is the agenda-setting event for the global travel technology and distribution industry. It is where OTAs, airlines, hotel groups, investors, and travel-tech leaders gather to define the next year's direction. The audience skews senior — roughly 65 percent C-level or VP — which is precisely why putting a Visit Loudoun staffer in that room is valuable: it puts our destination in conversations that otherwise happen without us.</p>
+
+    <div class="cost-table">
+      <h3>Cost Breakdown</h3>
+      <div class="cost-row"><span class="label">Registration (standard)</span><span class="amount">$3,099</span></div>
+      <div class="cost-row"><span class="label">Flight IAD ↔ FLL roundtrip (nonstop November)</span><span class="amount">~$275</span></div>
+      <div class="cost-row"><span class="label">Hotel — 3 nights Diplomat Beach Resort (group block)</span><span class="amount">~$1,230</span></div>
+      <div class="cost-row"><span class="label">Meals &amp; incidentals</span><span class="amount">~$300</span></div>
+      <div class="cost-row"><span class="label">Local ground transport</span><span class="amount">~$80</span></div>
+      <div class="cost-row total"><span class="label">Total estimated all-in</span><span class="amount">~$4,984</span></div>
+    </div>
+
+    <section class="detail-block">
+      <h3>Confirmed 2026 Speakers</h3>
+      <div class="speaker-grid">
+        <div class="speaker">
+          <div class="name">Omri Morgenshtern</div>
+          <div class="role">CEO, Agoda</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Rob Ransom</div>
+          <div class="role">Chief Strategy Officer, Booking Holdings</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Jean-Jacques Morin</div>
+          <div class="role">Group Deputy CEO, Accor</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Marilyn Markham</div>
+          <div class="role">VP AI &amp; Automation, Amex GBT</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Emily Hartman</div>
+          <div class="role">GM North America, Allianz Partners</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Laura Chadwick</div>
+          <div class="role">President/CEO, Travel Tech</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-block">
+      <h3>2026 Session Highlights</h3>
+      <ul class="session-list">
+        <li>What Can Travel Learn From AI-Native Startups? (Phocuswright Research)</li>
+        <li>National Travel &amp; Tourism Strategy and the Trump Administration's AI Action Plan</li>
+        <li>Young Leaders Summit</li>
+        <li>Innovation: Launch — startup pitch track</li>
+        <li>OTA pricing and inventory dynamics</li>
+        <li>How AI is reshaping personalization in travel discovery</li>
+        <li>Distribution economics and direct-booking strategy</li>
+      </ul>
+    </section>
+
+    <section class="detail-block">
+      <h3>Why DMO-Specific Content Is Stronger Here Than It Looks</h3>
+      <p>The 2025 Phocuswright Conference unveiled a new <strong>agentic destination management tool built specifically for DMOs</strong> — replacing static dashboards with conversational AI interfaces that draw on a decade of destination data. This is exactly the kind of innovation Visit Loudoun needs direct visibility on as we plan our 2027 data and content workflows. Phocuswright's proprietary research is unveiled live at the conference and debated by the executives shaping the industry — it is the earliest possible access to data we would otherwise wait months to read about second-hand.</p>
+    </section>
+
+    <div class="grid-2">
+      <div class="card merlot">
+        <h3>The Unique Value of Attending</h3>
+        <ul>
+          <li>The OTA and travel-tech ecosystem sets the agenda here for the next twelve months — what Visit Loudoun learns about AI distribution at this event is intelligence the destination would not otherwise have</li>
+          <li>Phocuswright Research is the most-cited body of research in the industry — having a Visit Loudoun staffer in the room when new findings are unveiled provides credible footnotes for internal strategy work</li>
+          <li>Networking exposure at the C-level and VP-level shapes how Visit Loudoun is perceived by major distribution partners — putting our destination in those conversations earns relationships we cannot buy</li>
+          <li>The Elevate Loudoun overnight-visitor pivot directly depends on understanding how OTAs and major distribution platforms are routing travelers — this is the room where those decisions are explained</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Honest Framing</h3>
+        <ul>
+          <li>The audience is heavily executive — my role is to bring intelligence back, not to network at peer level</li>
+          <li>This is the most expensive conference on the list — the value justification rests on the quality of intelligence and relationships brought back, not on tactical session takeaways</li>
+          <li>Pure DMO content is light — but the surrounding distribution, AI, and personalization content is unique to this event</li>
+          <li>Best framed as a long-cycle strategic investment, not a quick-payoff training</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alignment-box">
+      <h3>The Strategic Argument</h3>
+      <p>The destinations that compete most effectively over the next five years will be the ones that understand how AI is restructuring travel discovery and distribution — not just from a DMO perspective, but from the OTA, hotel, and airline perspective that ultimately determines whether a traveler chooses Loudoun, Charlottesville, or somewhere else entirely. Phocuswright is the one room each year where all of those players gather and tell each other what they are about to do. Visit Loudoun benefits from being represented in that room.</p>
+    </div>
+  </div>
+
+  <!-- ========== DIGITAL TRAVEL TAB ========== -->
+  <div class="tab-panel" id="digital">
+    <div class="conf-header">
+      <div class="conf-title">
+        <h2>Digital Travel Summit US</h2>
+        <div class="conf-meta">
+          <span>September 28–29, 2026</span>
+          <span>JW Marriott Orlando Bonnet Creek</span>
+          <span>WBR Research</span>
+        </div>
+      </div>
+      <div class="tier-badge tier-2">
+        <span class="tier-label">Priority</span>
+        <span class="tier-num">Tier 2</span>
+        <span class="tier-desc">True Peer-Level Practitioner Event</span>
+      </div>
+    </div>
+
+    <p class="lead-para">Digital Travel Summit is the rare travel-industry event where the audience composition matches my career stage. 62 percent of attendees hold Manager or Director roles in marketing — actual practitioners executing digital strategy for travel brands, not C-suite figureheads. The agenda focuses on AI-powered discovery, data-driven personalization, and conversion-optimized customer experiences — the operational layer of digital marketing where my work actually happens.</p>
+
+    <div class="cost-table">
+      <h3>Cost Breakdown</h3>
+      <div class="cost-row"><span class="label">Registration (Travel Executive 2-day pass — standard rate)</span><span class="amount">$3,199</span></div>
+      <div class="cost-row"><span class="label">Flight IAD ↔ MCO roundtrip (September is the cheapest month)</span><span class="amount">~$185</span></div>
+      <div class="cost-row"><span class="label">Hotel — 3 nights at JW Marriott Bonnet Creek</span><span class="amount">~$990</span></div>
+      <div class="cost-row"><span class="label">Meals &amp; incidentals</span><span class="amount">~$350</span></div>
+      <div class="cost-row"><span class="label">Local ground transport</span><span class="amount">~$120</span></div>
+      <div class="cost-row total"><span class="label">Total estimated all-in</span><span class="amount">~$4,844</span></div>
+    </div>
+
+    <p style="margin-bottom: 2rem; font-size: 0.92rem; color: var(--text-grey); font-style: italic;">An early-bird tier of $799 expired May 31, 2026. If a speaker discount, team discount, or comp pass becomes available, the all-in cost drops dramatically. Worth exploring sponsorship trade or speaker submission for the 2026 program.</p>
+
+    <section class="detail-block">
+      <h3>2026 Speakers</h3>
+      <div class="speaker-grid">
+        <div class="speaker">
+          <div class="name">Amanda Travaglini</div>
+          <div class="role">CMO, Margaritaville at Sea</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Katrina Fine</div>
+          <div class="role">Senior Manager, AI &amp; Technology Enablement, Hyatt</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Aubrey Gravante</div>
+          <div class="role">Director, Digital Integration, Walt Disney Company</div>
+        </div>
+        <div class="speaker">
+          <div class="name">Scott Smith</div>
+          <div class="role">Director, Global Airport Operations, United Airlines</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-block">
+      <h3>Companies Represented</h3>
+      <p>Marriott, Hyatt, Southwest, Expedia, Delta, JetBlue, Disney, Margaritaville at Sea, Viator, TripAdvisor, United, Hopper — the travel brands whose digital strategies Visit Loudoun's audience encounters every day. Roughly 50 percent of attendees hold marketing roles; 26 percent are in sales and partnerships.</p>
+      <ul class="session-list">
+        <li>AI-powered discovery and search visibility</li>
+        <li>Data-driven personalization across the booking journey</li>
+        <li>Seamless cross-channel customer experiences</li>
+        <li>Roundtables, interactive workshops, and small-group strategy sessions</li>
+      </ul>
+    </section>
+
+    <div class="grid-2">
+      <div class="card merlot">
+        <h3>What I'll Bring Back</h3>
+        <ul>
+          <li>Peer-level conversation with marketing managers and directors at major travel brands — direct insight into how they are solving the same problems I am</li>
+          <li>Roundtable and workshop formats designed for practitioners rather than passive listening</li>
+          <li>A practical understanding of how major hotel brands, airlines, and OTAs are routing AI into their digital marketing stack — which informs how Visit Loudoun's content shows up alongside theirs</li>
+          <li>Vendor and tool intelligence at the operational layer, not the boardroom layer</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Why It Complements Skift</h3>
+        <ul>
+          <li>Skift Data + AI is one day of curated panels and keynotes; Digital Travel is two days of working sessions, roundtables, and applied formats</li>
+          <li>Skift skews senior; Digital Travel skews practitioner — both perspectives matter</li>
+          <li>Different audiences and different formats mean genuinely different takeaways from similar topic areas</li>
+          <li>Orlando timing fits the September shoulder season when Visit Loudoun's campaign workload moderates</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alignment-box">
+      <h3>The Practitioner Argument</h3>
+      <p>Most travel-industry conferences are designed for executives or vendors. Digital Travel Summit is one of the few where the room is full of working digital marketers — the actual people building the campaigns and websites that travelers encounter. Walking in as the marketing coordinator from a Northern Virginia DMO and walking out with the cell numbers of digital marketing managers at Hyatt, Disney, and JetBlue is the kind of network that compounds for years.</p>
+    </div>
+  </div>
+
+  <!-- ========== SIMPLEVIEW TAB ========== -->
+  <div class="tab-panel" id="simpleview">
+    <div class="conf-header">
+      <div class="conf-title">
+        <h2>Simpleview Summit 2027</h2>
+        <div class="conf-meta">
+          <span>2027 — Dates Pending Announcement</span>
+          <span>Location TBD</span>
+          <span>Simpleview (Granicus)</span>
+        </div>
+      </div>
+      <div class="tier-badge tier-1">
+        <span class="tier-label">Priority</span>
+        <span class="tier-num">Tier 1</span>
+        <span class="tier-desc">Proven ROI — Already Attended</span>
+      </div>
+    </div>
+
+    <p class="lead-para">I attended the 2026 Simpleview Summit and the value was concrete and immediate — direct training on the CMS that powers VisitLoudoun.org, hands-on workshops with the product team, peer learning with other DMO content managers using the same platform, and roadmap visibility on features coming in the next 12 to 18 months. Simpleview has announced a 2027 event but has not yet released registration details. This proposal reserves budget for that confirmed event.</p>
+
+    <div class="cost-table">
+      <h3>Estimated Cost (Based on 2026 Event)</h3>
+      <div class="cost-row"><span class="label">Registration (estimated based on 2026)</span><span class="amount">~$1,000</span></div>
+      <div class="cost-row"><span class="label">Flight (location-dependent)</span><span class="amount">~$400</span></div>
+      <div class="cost-row"><span class="label">Hotel — 3 nights</span><span class="amount">~$800</span></div>
+      <div class="cost-row"><span class="label">Meals &amp; incidentals</span><span class="amount">~$300</span></div>
+      <div class="cost-row"><span class="label">Local ground transport</span><span class="amount">~$100</span></div>
+      <div class="cost-row total"><span class="label">Total estimated all-in</span><span class="amount">~$2,600</span></div>
+    </div>
+
+    <p style="margin-bottom: 2rem; font-size: 0.92rem; color: var(--text-grey); font-style: italic;">All figures are estimates pending Simpleview's 2027 event announcement. The cost will be refined as soon as Simpleview publishes registration and venue details.</p>
+
+    <div class="grid-2">
+      <div class="card merlot">
+        <h3>What I Brought Back from 2026 — and Expect from 2027</h3>
+        <ul>
+          <li>Direct CMS training on the platform that powers every page of VisitLoudoun.org — productivity gains compound across every content workflow for the rest of the year</li>
+          <li>Early roadmap visibility on Simpleview features being released over the next 12 to 18 months, allowing Visit Loudoun to plan content and integration work proactively</li>
+          <li>Peer learning with content managers at DMOs nationally who use the same platform — direct exchange of templates, workflow shortcuts, and use cases</li>
+          <li>In-person access to Simpleview's product and support team for feature requests — issues like the listicle widget spacing request gain meaningful traction when raised face-to-face rather than through a support ticket</li>
+          <li>Vendor relationship building with the Simpleview product team — useful when troubleshooting, requesting features, or negotiating contract renewals</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Why This One Pays for Itself</h3>
+        <ul>
+          <li>Simpleview is the single most critical software tool in my daily workflow — every productivity gain compounds across every page and every campaign for the rest of the year</li>
+          <li>The 2026 event delivered specific techniques and shortcuts that have already saved hours of monthly work</li>
+          <li>Simpleview (now part of Granicus) is investing heavily in AI features for DMO sites — early visibility on those tools is a competitive advantage</li>
+          <li>Vendor relationships built at the Summit pay back across contract negotiations and support escalations</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alignment-box">
+      <h3>The Pattern</h3>
+      <p>The 2026 Simpleview Summit is one of the most concretely valuable conferences I have attended. The skills, shortcuts, and relationships I brought back are visible in the speed and quality of my work on VisitLoudoun.org every week. Reserving budget for 2027 in advance ensures Visit Loudoun continues to capture that compounding return on a software platform that costs significantly more than the conference itself.</p>
+    </div>
+  </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Prepared by AJ Mirabal, Marketing Coordinator · Visit Loudoun · May 2026</p>
+    <p>All cost figures are directional estimates based on publicly available 2026 pricing; final figures to be confirmed with finance and event registrars prior to booking.</p>
+  </div>
+</footer>
+
+<script>
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const panels = document.querySelectorAll('.tab-panel');
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.dataset.tab;
+      tabBtns.forEach(b => b.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(tab).classList.add('active');
+      window.scrollTo({ top: document.querySelector('nav.tabs').offsetTop, behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
