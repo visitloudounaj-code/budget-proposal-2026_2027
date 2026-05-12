@@ -537,10 +537,76 @@
     max-width: 750px;
   }
 
+  /* Link styles */
+  a.conf-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  a.conf-link:hover {
+    border-bottom-color: var(--bold-sage);
+    color: var(--deep-merlot-light);
+  }
+  a.table-link {
+    color: var(--deep-merlot);
+    text-decoration: none;
+    border-bottom: 1px solid var(--bold-sage-light);
+    transition: border-color 0.2s ease;
+  }
+  a.table-link:hover { border-bottom-color: var(--deep-merlot); }
+  a.timeline-link {
+    color: var(--earthy-noir);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--bold-sage);
+    transition: border-color 0.2s ease;
+  }
+  a.timeline-link:hover { border-bottom-color: var(--deep-merlot); }
+  .visit-site-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    padding: 0.9rem 1.5rem;
+    background: var(--deep-merlot);
+    color: var(--warm-white);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .visit-site-cta:hover {
+    background: var(--deep-merlot-light);
+    transform: translateY(-1px);
+  }
+  .visit-site-cta::after {
+    content: "→";
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+  }
+  .visit-site-cta:hover::after { transform: translateX(3px); }
+  .cta-block {
+    background: var(--cream);
+    padding: 1.75rem 2rem;
+    border-radius: 6px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-left: 3px solid var(--deep-merlot);
+  }
+  .cta-block-text { font-size: 0.95rem; color: var(--text-grey); max-width: 540px; }
+  .cta-block-text strong { color: var(--earthy-noir); }
+
   @media print {
     nav.tabs { display: none; }
     .tab-panel { display: block !important; page-break-after: always; }
     header.hero { padding: 2rem 0; }
+    a { color: var(--deep-merlot) !important; text-decoration: underline !important; }
   }
 </style>
 </head>
@@ -627,7 +693,7 @@
       <tbody>
         <tr>
           <td>
-            <div class="conf-name">ESTO</div>
+            <a href="https://esto.ustravel.org/" target="_blank" rel="noopener" class="table-link"><div class="conf-name">ESTO</div></a>
             <div class="conf-loc">Philadelphia, PA</div>
           </td>
           <td>Aug 23–26, 2026</td>
@@ -637,7 +703,7 @@
         </tr>
         <tr>
           <td>
-            <div class="conf-name">DI Marketing &amp; Comms Summit</div>
+            <a href="https://destinationsinternational.org/events/marketing-communications-summit" target="_blank" rel="noopener" class="table-link"><div class="conf-name">DI Marketing &amp; Comms Summit</div></a>
             <div class="conf-loc">Miami, FL</div>
           </td>
           <td>Feb 23–25, 2027</td>
@@ -647,7 +713,7 @@
         </tr>
         <tr>
           <td>
-            <div class="conf-name">brightonSEO San Diego</div>
+            <a href="https://brightonseo.com/events/san-diego-2026" target="_blank" rel="noopener" class="table-link"><div class="conf-name">brightonSEO San Diego</div></a>
             <div class="conf-loc">San Diego, CA</div>
           </td>
           <td>Sep 15–16, 2026</td>
@@ -657,7 +723,7 @@
         </tr>
         <tr>
           <td>
-            <div class="conf-name">Skift Data + AI Summit</div>
+            <a href="https://live.skift.com/skift-data-ai-summit/" target="_blank" rel="noopener" class="table-link"><div class="conf-name">Skift Data + AI Summit</div></a>
             <div class="conf-loc">New York, NY</div>
           </td>
           <td>Jun 3, 2026</td>
@@ -667,7 +733,7 @@
         </tr>
         <tr>
           <td>
-            <div class="conf-name">Phocuswright Conference</div>
+            <a href="https://www.phocuswrightconference.com/" target="_blank" rel="noopener" class="table-link"><div class="conf-name">Phocuswright Conference</div></a>
             <div class="conf-loc">Hollywood, FL</div>
           </td>
           <td>Nov 17–19, 2026</td>
@@ -677,7 +743,7 @@
         </tr>
         <tr>
           <td>
-            <div class="conf-name">Digital Travel Summit</div>
+            <a href="https://digitaltravel.wbresearch.com/" target="_blank" rel="noopener" class="table-link"><div class="conf-name">Digital Travel Summit</div></a>
             <div class="conf-loc">Orlando, FL</div>
           </td>
           <td>Sep 28–29, 2026</td>
@@ -687,7 +753,7 @@
         </tr>
         <tr>
           <td>
-            <div class="conf-name">Simpleview Summit</div>
+            <a href="https://www.simpleviewinc.com/" target="_blank" rel="noopener" class="table-link"><div class="conf-name">Simpleview Summit</div></a>
             <div class="conf-loc">TBD 2027</div>
           </td>
           <td>2027 (TBD)</td>
@@ -742,37 +808,37 @@
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-date">June 3, 2026</div>
-          <div class="timeline-event">Skift Data + AI Summit</div>
+          <div class="timeline-event"><a href="https://live.skift.com/skift-data-ai-summit/" target="_blank" rel="noopener" class="timeline-link">Skift Data + AI Summit</a></div>
           <div class="timeline-loc">New York City — single day</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">August 23–26, 2026</div>
-          <div class="timeline-event">ESTO</div>
+          <div class="timeline-event"><a href="https://esto.ustravel.org/" target="_blank" rel="noopener" class="timeline-link">ESTO</a></div>
           <div class="timeline-loc">Philadelphia, PA</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">September 15–16, 2026</div>
-          <div class="timeline-event">brightonSEO San Diego</div>
+          <div class="timeline-event"><a href="https://brightonseo.com/events/san-diego-2026" target="_blank" rel="noopener" class="timeline-link">brightonSEO San Diego</a></div>
           <div class="timeline-loc">San Diego, CA (+ optional training day Sep 14)</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">September 28–29, 2026</div>
-          <div class="timeline-event">Digital Travel Summit</div>
+          <div class="timeline-event"><a href="https://digitaltravel.wbresearch.com/" target="_blank" rel="noopener" class="timeline-link">Digital Travel Summit</a></div>
           <div class="timeline-loc">Orlando, FL</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">November 17–19, 2026</div>
-          <div class="timeline-event">Phocuswright Conference</div>
+          <div class="timeline-event"><a href="https://www.phocuswrightconference.com/" target="_blank" rel="noopener" class="timeline-link">Phocuswright Conference</a></div>
           <div class="timeline-loc">Hollywood, FL</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">February 23–25, 2027</div>
-          <div class="timeline-event">DI Marketing &amp; Communications Summit</div>
+          <div class="timeline-event"><a href="https://destinationsinternational.org/events/marketing-communications-summit" target="_blank" rel="noopener" class="timeline-link">DI Marketing &amp; Communications Summit</a></div>
           <div class="timeline-loc">Miami, FL</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2027 (TBD)</div>
-          <div class="timeline-event">Simpleview Summit</div>
+          <div class="timeline-event"><a href="https://www.simpleviewinc.com/" target="_blank" rel="noopener" class="timeline-link">Simpleview Summit</a></div>
           <div class="timeline-loc">Location pending announcement</div>
         </div>
       </div>
@@ -790,7 +856,7 @@
   <div class="tab-panel" id="esto">
     <div class="conf-header">
       <div class="conf-title">
-        <h2>ESTO — Educational Seminar for Tourism Organizations</h2>
+        <h2><a href="https://esto.ustravel.org/" target="_blank" rel="noopener" class="conf-link">ESTO — Educational Seminar for Tourism Organizations</a></h2>
         <div class="conf-meta">
           <span>August 23–26, 2026</span>
           <span>Philadelphia, PA</span>
@@ -868,13 +934,18 @@
       <h3>Why This is the #1 Pitch</h3>
       <p>If Visit Loudoun could fund only one conference for me in 2026, ESTO would be that conference. The cost is the lowest on this list by a meaningful margin thanks to train access. The fit is the highest. The networking is structurally aligned to Visit Loudoun's peer set and Virginia ecosystem. And it is the one event where what I learn on Monday gets used on the VisitLoudoun.org site by Friday.</p>
     </section>
+
+    <div class="cta-block">
+      <div class="cta-block-text"><strong>Want more detail?</strong> The official ESTO 2026 site has the full agenda, registration tiers, Destiny Awards categories, and Philadelphia logistics.</div>
+      <a href="https://esto.ustravel.org/" target="_blank" rel="noopener" class="visit-site-cta">Visit Official Site</a>
+    </div>
   </div>
 
   <!-- ========== DI MARKETING & COMMS TAB ========== -->
   <div class="tab-panel" id="di">
     <div class="conf-header">
       <div class="conf-title">
-        <h2>Destinations International Marketing &amp; Communications Summit</h2>
+        <h2><a href="https://destinationsinternational.org/events/marketing-communications-summit" target="_blank" rel="noopener" class="conf-link">Destinations International Marketing &amp; Communications Summit</a></h2>
         <div class="conf-meta">
           <span>February 23–25, 2027</span>
           <span>Miami, FL</span>
@@ -967,13 +1038,18 @@
       <h3>Scholarship Opportunity to Verify</h3>
       <p>Destinations International offers registration scholarships for employees of destination organizations with operating budgets at or below $3 million. Visit Loudoun's eligibility should be confirmed with DI prior to budget commitment — if eligible, registration costs could be substantially reduced or covered entirely, dropping the all-in cost of this trip below $2,000.</p>
     </section>
+
+    <div class="cta-block">
+      <div class="cta-block-text"><strong>Want more detail?</strong> Destinations International's official summit page covers the 2027 Miami agenda as it is published, session tracks, and scholarship eligibility.</div>
+      <a href="https://destinationsinternational.org/events/marketing-communications-summit" target="_blank" rel="noopener" class="visit-site-cta">Visit Official Site</a>
+    </div>
   </div>
 
   <!-- ========== BRIGHTON SEO TAB ========== -->
   <div class="tab-panel" id="brighton">
     <div class="conf-header">
       <div class="conf-title">
-        <h2>brightonSEO San Diego</h2>
+        <h2><a href="https://brightonseo.com/events/san-diego-2026" target="_blank" rel="noopener" class="conf-link">brightonSEO San Diego</a></h2>
         <div class="conf-meta">
           <span>September 15–16, 2026</span>
           <span>San Diego Convention Center</span>
@@ -1041,13 +1117,18 @@
       <h3>The Strategic Case</h3>
       <p>AI Overviews now appear in roughly 30 percent of travel-related Google searches, and DMOs are reporting 20–40 percent traffic drops year-over-year as a result. Being ranked first no longer guarantees clicks — being cited inside the AI Overview is the new goal, and that requires content structured fundamentally differently from traditional SEO. brightonSEO is where the practitioners solving this problem are publishing their work first. The DMO industry will get to this conversation second.</p>
     </div>
+
+    <div class="cta-block">
+      <div class="cta-block-text"><strong>Want more detail?</strong> The brightonSEO San Diego 2026 site has training day options, full session schedule (released closer to the event), and scholarship/free ticket application details.</div>
+      <a href="https://brightonseo.com/events/san-diego-2026" target="_blank" rel="noopener" class="visit-site-cta">Visit Official Site</a>
+    </div>
   </div>
 
   <!-- ========== SKIFT TAB ========== -->
   <div class="tab-panel" id="skift">
     <div class="conf-header">
       <div class="conf-title">
-        <h2>Skift Data + AI Summit</h2>
+        <h2><a href="https://live.skift.com/skift-data-ai-summit/" target="_blank" rel="noopener" class="conf-link">Skift Data + AI Summit</a></h2>
         <div class="conf-meta">
           <span>June 3, 2026</span>
           <span>City Winery at Pier 57, NYC</span>
@@ -1142,13 +1223,18 @@
       <h3>The Compounding Effect</h3>
       <p>Attending this in early June primes me with travel-industry AI intelligence before the rest of the conference year. The frameworks I learn at Skift inform every conversation I have at ESTO in August, at brightonSEO in September, and at DI in February 2027. It is the cheapest conference on the list and the one that creates the most leverage for the others.</p>
     </div>
+
+    <div class="cta-block">
+      <div class="cta-block-text"><strong>Want more detail?</strong> Skift's event page has the full speaker roster, session agenda, and registration access (email events@skift.com for exact 2026 pricing).</div>
+      <a href="https://live.skift.com/skift-data-ai-summit/" target="_blank" rel="noopener" class="visit-site-cta">Visit Official Site</a>
+    </div>
   </div>
 
   <!-- ========== PHOCUSWRIGHT TAB ========== -->
   <div class="tab-panel" id="phocus">
     <div class="conf-header">
       <div class="conf-title">
-        <h2>Phocuswright Conference</h2>
+        <h2><a href="https://www.phocuswrightconference.com/" target="_blank" rel="noopener" class="conf-link">Phocuswright Conference</a></h2>
         <div class="conf-meta">
           <span>November 17–19, 2026</span>
           <span>Diplomat Beach Resort, Hollywood, FL</span>
@@ -1247,13 +1333,18 @@
       <h3>The Strategic Argument</h3>
       <p>The destinations that compete most effectively over the next five years will be the ones that understand how AI is restructuring travel discovery and distribution — not just from a DMO perspective, but from the OTA, hotel, and airline perspective that ultimately determines whether a traveler chooses Loudoun, Charlottesville, or somewhere else entirely. Phocuswright is the one room each year where all of those players gather and tell each other what they are about to do. Visit Loudoun benefits from being represented in that room.</p>
     </div>
+
+    <div class="cta-block">
+      <div class="cta-block-text"><strong>Want more detail?</strong> The Phocuswright Conference site has the full agenda, speaker bios, pricing tiers, and Diplomat Beach Resort logistics.</div>
+      <a href="https://www.phocuswrightconference.com/" target="_blank" rel="noopener" class="visit-site-cta">Visit Official Site</a>
+    </div>
   </div>
 
   <!-- ========== DIGITAL TRAVEL TAB ========== -->
   <div class="tab-panel" id="digital">
     <div class="conf-header">
       <div class="conf-title">
-        <h2>Digital Travel Summit US</h2>
+        <h2><a href="https://digitaltravel.wbresearch.com/" target="_blank" rel="noopener" class="conf-link">Digital Travel Summit US</a></h2>
         <div class="conf-meta">
           <span>September 28–29, 2026</span>
           <span>JW Marriott Orlando Bonnet Creek</span>
@@ -1339,13 +1430,18 @@
       <h3>The Practitioner Argument</h3>
       <p>Most travel-industry conferences are designed for executives or vendors. Digital Travel Summit is one of the few where the room is full of working digital marketers — the actual people building the campaigns and websites that travelers encounter. Walking in as the marketing coordinator from a Northern Virginia DMO and walking out with the cell numbers of digital marketing managers at Hyatt, Disney, and JetBlue is the kind of network that compounds for years.</p>
     </div>
+
+    <div class="cta-block">
+      <div class="cta-block-text"><strong>Want more detail?</strong> The Digital Travel Summit US site has the agenda, pricing tiers, attendee composition data, and JW Marriott Orlando venue details.</div>
+      <a href="https://digitaltravel.wbresearch.com/" target="_blank" rel="noopener" class="visit-site-cta">Visit Official Site</a>
+    </div>
   </div>
 
   <!-- ========== SIMPLEVIEW TAB ========== -->
   <div class="tab-panel" id="simpleview">
     <div class="conf-header">
       <div class="conf-title">
-        <h2>Simpleview Summit 2027</h2>
+        <h2><a href="https://www.simpleviewinc.com/" target="_blank" rel="noopener" class="conf-link">Simpleview Summit 2027</a></h2>
         <div class="conf-meta">
           <span>2027 — Dates Pending Announcement</span>
           <span>Location TBD</span>
@@ -1398,6 +1494,11 @@
     <div class="alignment-box">
       <h3>The Pattern</h3>
       <p>The 2026 Simpleview Summit is one of the most concretely valuable conferences I have attended. The skills, shortcuts, and relationships I brought back are visible in the speed and quality of my work on VisitLoudoun.org every week. Reserving budget for 2027 in advance ensures Visit Loudoun continues to capture that compounding return on a software platform that costs significantly more than the conference itself.</p>
+    </div>
+
+    <div class="cta-block">
+      <div class="cta-block-text"><strong>Want more detail?</strong> Simpleview's main site is the best current source until the 2027 Summit dates and registration are formally announced. Our account rep can also share early details.</div>
+      <a href="https://www.simpleviewinc.com/" target="_blank" rel="noopener" class="visit-site-cta">Visit Official Site</a>
     </div>
   </div>
 
