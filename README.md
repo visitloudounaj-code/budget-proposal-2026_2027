@@ -4,7 +4,7 @@ A professional development budget proposal for the upcoming fiscal year, prepare
 
 ## View the Proposal
 
-The proposal is hosted via GitHub Pages: **[link to GitHub Pages site]**
+The proposal is hosted via GitHub Pages: **(https://visitloudounaj-code.github.io/budget-proposal-2026_2027/)**
 
 For best experience, view in a modern browser (Chrome, Firefox, Safari or Edge). The page is fully responsive and prints cleanly if a hard copy is needed.
 
